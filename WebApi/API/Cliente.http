@@ -1,0 +1,56 @@
+POST http://localhost:4000/api/cliente/agregar HTTP/1.1
+content-type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjEiLCJuYmYiOjE1ODY5NTgxNDEsImV4cCI6MTU4Njk2NTM0MSwiaWF0IjoxNTg2OTU4MTQxfQ.roqqHZ79MvD781S6SekebSfXj0fsrttPBafy6_Vmbn8
+
+{
+  "name": "pako1",
+  "address": "direccion1",
+  "coordinate": "12345, 12345",
+  "nit": "12345",
+  "wholesaler": true,
+  "telephone": "12345678",
+  "email": "fc@gmail.com",
+  "idPerson": 1,
+  "urlPage": "https://cliente1.com"
+}
+
+###
+GET http://localhost:4000/api/cliente/listar HTTP/1.1
+content-type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjEiLCJuYmYiOjE1ODY5NTgxNDEsImV4cCI6MTU4Njk2NTM0MSwiaWF0IjoxNTg2OTU4MTQxfQ.roqqHZ79MvD781S6SekebSfXj0fsrttPBafy6_Vmbn8
+
+###
+GET http://localhost:4000/api/cliente/obtener/2 HTTP/1.1
+content-type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjEiLCJuYmYiOjE1ODY5NTgxNDEsImV4cCI6MTU4Njk2NTM0MSwiaWF0IjoxNTg2OTU4MTQxfQ.roqqHZ79MvD781S6SekebSfXj0fsrttPBafy6_Vmbn8
+
+###
+PUT http://localhost:4000/api/cliente/actualizar HTTP/1.1
+content-type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjEiLCJuYmYiOjE1ODY5NTgxNDEsImV4cCI6MTU4Njk2NTM0MSwiaWF0IjoxNTg2OTU4MTQxfQ.roqqHZ79MvD781S6SekebSfXj0fsrttPBafy6_Vmbn8
+
+{
+  "idClient": 2,
+  "name": "pako2",
+  "address": "direccion1",
+  "coordinate": "12345, 12345",
+  "nit": "12345",
+  "wholesaler": true,
+  "telephone": "12345678",
+  "email": "fc@gmail.com",
+  "idPerson": 1,
+  "urlPage": "https://cliente2.com"
+}
+###
+DELETE  http://localhost:4000/api/cliente/eliminar/2 HTTP/1.1
+content-type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjEiLCJuYmYiOjE1ODY5NTgxNDEsImV4cCI6MTU4Njk2NTM0MSwiaWF0IjoxNTg2OTU4MTQxfQ.roqqHZ79MvD781S6SekebSfXj0fsrttPBafy6_Vmbn8
+
+# {
+#   "idUser": 1,
+#   "name": "FR",
+#   "lastName": "CG",
+#   "username": "PAKO1",
+#   "state": true,
+#   "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjEiLCJuYmYiOjE1ODY5NTgxNDEsImV4cCI6MTU4Njk2NTM0MSwiaWF0IjoxNTg2OTU4MTQxfQ.roqqHZ79MvD781S6SekebSfXj0fsrttPBafy6_Vmbn8"
+# }

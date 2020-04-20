@@ -1,0 +1,18 @@
+Client - Person
+ClientMachine - Client,Machine
+(si)Machine - StatusMachine
+Notification - Client,User,StatusMachine
+(si)OperationProductEntry - Provider, Product
+OperationProductOutput - Product,Client,Notification
+(si)Page
+Person
+(si)Product - Provider,ProductType
+(si)ProductType
+(si)Provider
+PurchaseDetail - Product,PurchaseOrder
+(si)PurchaseOrder - Provider
+(si)Role
+(si)RolePage - Role,Page
+(si)StatusMachine
+(si)User
+(si)UserRole - User,Role

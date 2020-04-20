@@ -1,0 +1,33 @@
+GET http://localhost:4000/api/rolPagina/listar HTTP/1.1
+content-type: application/json
+//Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjIiLCJuYmYiOjE1ODQ2ODQ0MDcsImV4cCI6MTU4NDY5MTYwNywiaWF0IjoxNTg0Njg0NDA3fQ.ngW7_uCJBWpX4-5L8quaqKq1zY7_kb3J626XUAcCRSs
+
+###
+GET http://localhost:4000/api/rolPagina/obtener/1 HTTP/1.1
+content-type: application/json
+//Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjIiLCJuYmYiOjE1ODQ2ODQ0MDcsImV4cCI6MTU4NDY5MTYwNywiaWF0IjoxNTg0Njg0NDA3fQ.ngW7_uCJBWpX4-5L8quaqKq1zY7_kb3J626XUAcCRSs
+
+###
+POST http://localhost:4000/api/rolPagina/agregar HTTP/1.1
+content-type: application/json
+//Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjIiLCJuYmYiOjE1ODQ2ODQ0MDcsImV4cCI6MTU4NDY5MTYwNywiaWF0IjoxNTg0Njg0NDA3fQ.ngW7_uCJBWpX4-5L8quaqKq1zY7_kb3J626XUAcCRSs
+
+{
+  "idRole": 4,
+  "idPage": 7
+}
+
+###
+PUT http://localhost:4000/api/rolPagina/actualizar HTTP/1.1
+content-type: application/json
+//Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjIiLCJuYmYiOjE1ODQ2ODQ0MDcsImV4cCI6MTU4NDY5MTYwNywiaWF0IjoxNTg0Njg0NDA3fQ.ngW7_uCJBWpX4-5L8quaqKq1zY7_kb3J626XUAcCRSs
+
+{
+  "idRolePage": 4,
+  "idRole": 4,
+  "idPage": 8
+}
+###
+DELETE http://localhost:4000/api/rolPagina/eliminar/4 HTTP/1.1
+content-type: application/json
+//Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjIiLCJuYmYiOjE1ODQ2ODQ0MDcsImV4cCI6MTU4NDY5MTYwNywiaWF0IjoxNTg0Njg0NDA3fQ.ngW7_uCJBWpX4-5L8quaqKq1zY7_kb3J626XUAcCRSs

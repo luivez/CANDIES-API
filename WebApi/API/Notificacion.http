@@ -1,0 +1,33 @@
+POST http://localhost:4000/api/notificacion/agregar HTTP/1.1
+content-type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjEiLCJuYmYiOjE1ODY5NTgxNDEsImV4cCI6MTU4Njk2NTM0MSwiaWF0IjoxNTg2OTU4MTQxfQ.roqqHZ79MvD781S6SekebSfXj0fsrttPBafy6_Vmbn8
+
+{
+  "idClient": 1,
+  "idUser": 1,
+  "idStatusMachine": 1,
+  "totalSales": 2000
+}
+
+###
+GET http://localhost:4000/api/notificacion/listar HTTP/1.1
+content-type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjEiLCJuYmYiOjE1ODY5NTgxNDEsImV4cCI6MTU4Njk2NTM0MSwiaWF0IjoxNTg2OTU4MTQxfQ.roqqHZ79MvD781S6SekebSfXj0fsrttPBafy6_Vmbn8
+
+###
+GET http://localhost:4000/api/notificacion/obtener/3 HTTP/1.1
+content-type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjEiLCJuYmYiOjE1ODY5NTgxNDEsImV4cCI6MTU4Njk2NTM0MSwiaWF0IjoxNTg2OTU4MTQxfQ.roqqHZ79MvD781S6SekebSfXj0fsrttPBafy6_Vmbn8
+
+###
+PUT http://localhost:4000/api/notificacion/actualizar HTTP/1.1
+content-type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjEiLCJuYmYiOjE1ODY5NTgxNDEsImV4cCI6MTU4Njk2NTM0MSwiaWF0IjoxNTg2OTU4MTQxfQ.roqqHZ79MvD781S6SekebSfXj0fsrttPBafy6_Vmbn8
+
+{
+  "idNotification": 3,
+  "idClient": 1,
+  "idUser": 1,
+  "idStatusMachine": 1,
+  "totalSales": 3000
+}

@@ -1,0 +1,33 @@
+GET http://localhost:4000/api/usuarioRol/listar HTTP/1.1
+content-type: application/json
+//Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjIiLCJuYmYiOjE1ODQ2ODQ0MDcsImV4cCI6MTU4NDY5MTYwNywiaWF0IjoxNTg0Njg0NDA3fQ.ngW7_uCJBWpX4-5L8quaqKq1zY7_kb3J626XUAcCRSs
+
+###
+GET http://localhost:4000/api/usuarioRol/obtener/1 HTTP/1.1
+content-type: application/json
+//Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjIiLCJuYmYiOjE1ODQ2ODQ0MDcsImV4cCI6MTU4NDY5MTYwNywiaWF0IjoxNTg0Njg0NDA3fQ.ngW7_uCJBWpX4-5L8quaqKq1zY7_kb3J626XUAcCRSs
+
+###
+POST http://localhost:4000/api/usuarioRol/agregar HTTP/1.1
+content-type: application/json
+//Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjIiLCJuYmYiOjE1ODQ2ODQ0MDcsImV4cCI6MTU4NDY5MTYwNywiaWF0IjoxNTg0Njg0NDA3fQ.ngW7_uCJBWpX4-5L8quaqKq1zY7_kb3J626XUAcCRSs
+
+{
+  "idUser": 2,
+  "idRole": 1,
+}
+
+###
+PUT http://localhost:4000/api/usuarioRol/actualizar HTTP/1.1
+content-type: application/json
+//Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjIiLCJuYmYiOjE1ODQ2ODQ0MDcsImV4cCI6MTU4NDY5MTYwNywiaWF0IjoxNTg0Njg0NDA3fQ.ngW7_uCJBWpX4-5L8quaqKq1zY7_kb3J626XUAcCRSs
+
+{
+  "idUserRole": 2,
+  "idUser": 1,
+  "idRole": 1,
+}
+###
+DELETE http://localhost:4000/api/usuarioRol/eliminar/3 HTTP/1.1
+content-type: application/json
+//Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjIiLCJuYmYiOjE1ODQ2ODQ0MDcsImV4cCI6MTU4NDY5MTYwNywiaWF0IjoxNTg0Njg0NDA3fQ.ngW7_uCJBWpX4-5L8quaqKq1zY7_kb3J626XUAcCRSs
